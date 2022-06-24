@@ -1,0 +1,18 @@
+body{
+      background-color: black;
+      color: beige;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    div{
+      margin-top: 200px;
+      text-align: center;
+    }
+    .myTime{
+      font-size: 84px;
+    }
+    .myDate{
+      font-size: 56px;
+    }
+    button{
+      padding: 5px 25px 5px 25px;
+    }

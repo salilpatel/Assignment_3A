@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <title>ID card generator</title>
+    <link rel="stylesheet" href="problem3.css">
+  </head>
+  <body>
+    
+    <div id="outerDiv">
+      
+      <div id="idCardGenerator">
+        <p>ID card generator</p>
+      </div>
+      
+      <div id="idCardGeneratorBody">
+        <div id="provideDetails">
+        <p>Enter Students Details</p>
+        <forms>
+          <label for="name">Enter Name:</label><br>
+          <input type="text" id="name" name="name"><br><br>
+          
+          <label for="collegeName">Enter College Name:</label><br>
+          <input type="text" id="collegeName" name="collegeName"><br><br>
+          
+          <label for="location">Enter Location:</label><br>
+          <input type="text" id="location" name="location"><br><br>
+          
+          <label for="img">Enter Student Picture:</label><br>
+          <input type="file" id="img" name="img" accept="image/*">
+          
+          <br><br><button onclick="generateCard()">Generate Card</button>  
+        </forms>  
+        </div>
+        
+        <div id="generatedIdCard_Outer">
+          <p id="textGeneratedIdCard"></p>
+          <div id="generatedIdCard_Inner">
+            <div id="imgDiv">
+              <img id="myImg">
+            </div>
+            <div id="infoDiv">
+              <p id="showName"></p>
+              <p id="showCollegeName"></p>
+              <p id="showLocation"></p>
+            </div>  
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <script src="problem3.js"></script>
+    
+  </body> 
+</html>

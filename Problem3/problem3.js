@@ -12,5 +12,5 @@ function generateCard(){
   document.getElementById("imgDiv").style.backgroundColor = "blue";
   document.getElementById("infoDiv").style.backgroundColor = "#d9d9d9";
 
-  document.getElementById('myImg').style.display = "block";
+  document.getElementById('myImg').style.backgroundImage = img;
 }

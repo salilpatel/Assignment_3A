@@ -2,14 +2,16 @@ body{
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/*container*/
 #outerDiv{
   display: grid;
   grid-template-row: 50px 500px;
-  margin: 200px 500px 0px 500px;
+  margin: 180px 500px 0px 500px;
   border: 1px solid black;
+  border-radius: 15px;
 }
 
-
+/*heading*/
 #idCardGenerator{
   background-color: blue;
   color: white;
@@ -17,33 +19,64 @@ body{
   padding: 10px 0px 10px 0px;
   height: 50px;
   border-bottom: 1px solid black;
+  border-radius: 15px 15px 0px 0px;
 }
-
-
+/*body*/
 #idCardGeneratorBody{
   display: grid;
   grid-template-columns: 45% 55%;
+  height: 410px;
 }
+
+/*left-body*/
 #provideDetails{
   background-color: white;
   margin-left: 30%;
   border-right: 1px solid black;
 }
 
-
+/*right-body*/
 #generatedIdCard_Outer{
-  margin: 30px 0px 0px 0px;
-  }
+  margin: 50px 0px 0px 0px;
+}
 #generatedIdCard_Inner{
   display: grid;
   grid-template-columns: 40% 60%;
   margin: 0px 50px 0px 50px;
+  height: 200px;
+  visibility: hidden;
 }
-
+/*right body - img left */
+#imgDiv{
+  background-color: blue;
+  padding-top: 50px;
+  padding-left: 28px;
+  border-radius: 15px 0px 0px 15px;
+}
+#myImg{
+  border-radius: 10px;
+}
+/*right body - info right*/
+#infoDiv{
+  padding: 35px 0 0 20px;
+  background-color: #d9d9d9;
+  border-radius: 0px 15px 15px 0px;
+}
 
 #provideDetails > p:first-child{
   color: blue;
 }
 #generatedIdCard_Outer > p:first-child{
   text-align: center;
+}
+
+#showInputImg{
+  margin-top: 10px;
+  visibility: hidden;
+}
+
+input[type="text"]{
+  background-color: #dbe3e6;
+  border-radius: 5px;
+  border-color: lightblue;
 }

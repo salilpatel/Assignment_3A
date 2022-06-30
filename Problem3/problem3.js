@@ -1,19 +1,25 @@
+var img;
+
+function loadImage(e){
+  img = URL.createObjectURL(e.target.files[0]);
+  
+  document.getElementById("showInputImg").src = img;
+  document.getElementById("showInputImg").style.visibility = "visible";
+}
+
+
 function generateCard(){
   let name = document.getElementById("name").value; 
   let collegeName = document.getElementById("collegeName").value;
   let location = document.getElementById("location").value;
   
-  let img = document.getElementById("img").src;
-  let x = document.createElement("img");
-  x.setAttribute("src",img);
-  
-  document.getElementById("myImg").appendChild(x);
-  
   document.getElementById("textGeneratedIdCard").innerHTML = "Generated Id Card";
-  document.getElementById("showName").innerHTML = `Name: ${name}`;
-  document.getElementById("showCollegeName").innerHTML = `Colege Name: ${collegeName}`;
-  document.getElementById("showLocation").innerHTML = `Location: ${location}`;
-
-  document.getElementById("imgDiv").style.backgroundColor = "blue";
-  document.getElementById("infoDiv").style.backgroundColor = "#d9d9d9";
+  document.getElementById("showName").innerHTML = `Name: <strong>${name}</strong>`;
+  document.getElementById("showCollegeName").innerHTML = `Colege Name: <strong>${collegeName}</strong>`;
+  document.getElementById("showLocation").innerHTML = `Location: <strong>${location}</strong>`;
+  
+  document.getElementById("myImg").src = img;
+  
+  document.getElementById("generatedIdCard_Inner").style.visibility = "visible";
 }
+

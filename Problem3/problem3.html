@@ -16,7 +16,7 @@
         <p>Enter Students Details</p>
         <forms>
           <label for="name">Enter Name:</label><br>
-          <input type="text" id="name" name="name"><br><br>
+          <input type="text" id="name" name="name" required><br><br>
           
           <label for="collegeName">Enter College Name:</label><br>
           <input type="text" id="collegeName" name="collegeName"><br><br>
@@ -25,7 +25,9 @@
           <input type="text" id="location" name="location"><br><br>
           
           <label for="img">Enter Student Picture:</label><br>
-          <input type="file" id="img" name="img" accept="image/*">
+          <input type="file" id="img" name="img" accept="image/*" onchange="loadImage(event)" onload="showImg(event)">
+
+          <img id="showInputImg" height="80px" width="80px">
           
           <br><br><button onclick="generateCard()">Generate Card</button>  
         </forms>  
@@ -35,7 +37,7 @@
           <p id="textGeneratedIdCard"></p>
           <div id="generatedIdCard_Inner">
             <div id="imgDiv">
-              <img id="myImg">
+              <img id="myImg" height="100px" width="100px">
             </div>
             <div id="infoDiv">
               <p id="showName"></p>
